@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Text_input" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+    
+    
+    <style name="textGoogleSign">
+        <item name="android:layout_marginLeft">@dimen/x142</item>
+        <item name="android:layout_marginTop">@dimen/xxl</item>
+        <item name="android:layout_marginRight">@dimen/x142</item>
+    </style>
+
+    <style name="textRecucler">
+        <item name="android:layout_marginTop">@dimen/xxs</item>
+        <item name="android:layout_marginLeft">@dimen/xl</item>
+    </style>
+
+    <style name="imageRecucler">
+        <item name="android:layout_marginTop">@dimen/m</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+
+</resources>

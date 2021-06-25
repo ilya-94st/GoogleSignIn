@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi"
+    app:startDestination="@id/loandingFragment">
+
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.staselovich_p2.Registration.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_arrayFragment"
+            app:destination="@id/arrayFragment"
+            app:enterAnim="@anim/enter"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/arrayFragment"
+        android:name="com.example.staselovich_p2.Arrays.ArrayFragment"
+        android:label="fragment_array"
+        tools:layout="@layout/fragment_array" >
+        <action
+            android:id="@+id/action_arrayFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loandingFragment"
+        android:name="com.example.staselovich_p2.LoandingFragment"
+        android:label="fragment_loanding"
+        tools:layout="@layout/fragment_loanding" >
+        <action
+            android:id="@+id/action_loandingFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:popUpTo="@id/navi"
+            app:enterAnim="@anim/enter"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

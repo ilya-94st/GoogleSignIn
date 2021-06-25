@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Staselovich_P2</string>
+    <string name="textData">Введите свое данные</string>
+    <string name="FirstName">Имя</string>
+    <string name="Email">email</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
